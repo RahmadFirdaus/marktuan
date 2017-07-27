@@ -14,3 +14,24 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/tuan', function () {
+    return view("mark");
+});
+
+Route::get('/testmodel', function () {
+	$query =App\post::all();
+    return $query;
+});
+
+Route::get('/testmodel', function () {
+	$query =App\anggota::find(5);
+    return $query;
+});
+
+Route::get('/testmodel', function () {
+	$query =App\siswa::all();
+    return $query;
+});
+
+
